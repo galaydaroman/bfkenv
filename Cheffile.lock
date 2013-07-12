@@ -45,18 +45,18 @@ GIT
 GIT
   remote: https://github.com/customink-webops/phantomjs.git
   ref: master
-  sha: 5ab5f938dbc3ab84275d2c5d3cf48ba27614813a
+  sha: f6fe4041d3fe3aa3236026f0338b2a35bee89ed2
   specs:
-    phantomjs (1.0.0)
+    phantomjs (1.0.2)
       build-essential (>= 0.0.0)
       chocolatey (>= 0.0.0)
 
 GIT
   remote: https://github.com/fnichol/chef-bashrc
   ref: master
-  sha: 9c3ff77aab2bda7f2890da5681f6a4a392507caf
+  sha: f730743bcecba466ed74a7afaa22f1423cbc41fc
   specs:
-    bashrc (0.2.3)
+    bashrc (0.3.5)
       git (>= 0.0.0)
 
 GIT

@@ -3,36 +3,30 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'chef-client'
 cookbook 'apt', '= 1.7.0'
 cookbook 'gemrc'
 cookbook 'git'
 cookbook 'vim'
 cookbook 'mysql'
-cookbook 'imagemagick'
 cookbook 'xvfb'
-
-cookbook 'firefox', 
-  :git => 'https://github.com/lakim/chef-firefox.git'
 
 cookbook 'redis',
   :git => 'https://github.com/cramerdev/redis-cookbook.git'
 
-cookbook 'phantomjs', 
-  :git => 'https://github.com/customink-webops/phantomjs.git'
-
 cookbook 'rvm',
   :git => 'https://github.com/fnichol/chef-rvm'
-
-cookbook 'bashrc',
-  :git => 'https://github.com/fnichol/chef-bashrc'
-
-cookbook 'bash-profile',
-  :git => 'https://github.com/vprokopchuk256/chef-bash-profile'
-
-cookbook 'bash-completion',
-  :git => 'https://github.com/phlipper/chef-bash-completion'
 
 cookbook 'git-config',
   :git => 'https://github.com/vprokopchuk256/chef-git-config'
 
+# cookbook 'bashrc',
+# cookbook 'firefox',
+#   :git => 'https://github.com/lakim/chef-firefox.git'
+# cookbook 'imagemagick'
+#   :git => 'https://github.com/fnichol/chef-bashrc'
+# cookbook 'bash-profile',
+#   :git => 'https://github.com/vprokopchuk256/chef-bash-profile'
+# cookbook 'bash-completion',
+#   :git => 'https://github.com/phlipper/chef-bash-completion'
+# cookbook 'phantomjs',
+#   :git => 'https://github.com/customink-webops/phantomjs.git'
