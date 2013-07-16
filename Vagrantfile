@@ -11,9 +11,9 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 3000, 3000
   config.vm.forward_port 3306, 3306
 
-  config.vm.share_folder 'pfr', "/pfr", "../pfr"
+  config.vm.share_folder 'pfr', "/home/vagrant/pfr", "../pfr"
 
-  config.vm.customize ["modifyvm", :id, "--memory", 3096, "--cpus", 2]
+  config.vm.customize ["modifyvm", :id, "--memory", 2248, "--cpus", 2]
 
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["cookbooks", "my-cookbooks"]
