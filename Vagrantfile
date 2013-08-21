@@ -16,7 +16,7 @@ Vagrant::Config.run do |config|
   config.vm.customize ["modifyvm", :id, "--memory", 2248, "--cpus", 2]
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ["cookbooks", "my-cookbooks"]
+    chef.cookbooks_path = ["cookbooks"]
 
     chef.json = {
       :install => {

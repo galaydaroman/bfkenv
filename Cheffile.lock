@@ -3,13 +3,8 @@ SITE
   specs:
     apt (1.7.0)
     build-essential (1.4.0)
-    chef-client (3.0.4)
-      cron (>= 1.2.0)
     chef_gem (0.1.0)
     chef_handler (1.1.4)
-    chocolatey (0.0.5)
-      powershell (>= 0.0.0)
-    cron (1.2.4)
     dmg (1.1.0)
     gemrc (0.0.1)
     git (2.5.2)
@@ -18,13 +13,10 @@ SITE
       runit (>= 1.0)
       windows (>= 0.0.0)
       yum (>= 0.0.0)
-    imagemagick (0.2.2)
     mysql (3.0.2)
       build-essential (> 1.1.0)
       openssl (>= 0.0.0)
     openssl (1.0.2)
-    powershell (1.1.0)
-      windows (>= 1.2.8)
     runit (1.1.6)
       build-essential (>= 0.0.0)
       yum (>= 0.0.0)
@@ -43,50 +35,12 @@ GIT
       apt (>= 0.0.0)
 
 GIT
-  remote: https://github.com/customink-webops/phantomjs.git
-  ref: master
-  sha: f6fe4041d3fe3aa3236026f0338b2a35bee89ed2
-  specs:
-    phantomjs (1.0.2)
-      build-essential (>= 0.0.0)
-      chocolatey (>= 0.0.0)
-
-GIT
-  remote: https://github.com/fnichol/chef-bashrc
-  ref: master
-  sha: f730743bcecba466ed74a7afaa22f1423cbc41fc
-  specs:
-    bashrc (0.3.5)
-      git (>= 0.0.0)
-
-GIT
   remote: https://github.com/fnichol/chef-rvm
   ref: master
   sha: 7038fb8c518d0d7785767de215b1ae463f237973
   specs:
     rvm (0.9.1)
       chef_gem (>= 0.0.0)
-
-GIT
-  remote: https://github.com/lakim/chef-firefox.git
-  ref: master
-  sha: 7c77aac147e921648c2030795b81ec3a1145b490
-  specs:
-    firefox (0.0.1)
-
-GIT
-  remote: https://github.com/phlipper/chef-bash-completion
-  ref: master
-  sha: ce9be22214d16e66ef83bb13ba04165fa412ff33
-  specs:
-    bash-completion (0.1.0)
-
-GIT
-  remote: https://github.com/vprokopchuk256/chef-bash-profile
-  ref: master
-  sha: 6d6b29dd10b68dc5532eeadd74fbe527790bd28d
-  specs:
-    bash-profile (0.1.0)
 
 GIT
   remote: https://github.com/vprokopchuk256/chef-git-config
@@ -97,17 +51,10 @@ GIT
 
 DEPENDENCIES
   apt (= 1.7.0)
-  bash-completion (>= 0)
-  bash-profile (>= 0)
-  bashrc (>= 0)
-  chef-client (>= 0)
-  firefox (>= 0)
   gemrc (>= 0)
   git (>= 0)
   git-config (>= 0)
-  imagemagick (>= 0)
   mysql (>= 0)
-  phantomjs (>= 0)
   redis (>= 0)
   rvm (>= 0)
   vim (>= 0)
