@@ -11,9 +11,11 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 3000, 3000
   config.vm.forward_port 3306, 3306
 
-  config.vm.share_folder 'pfr', "/home/vagrant/pfr", "../pfr"
+  # config.vm.share_folder 'fusetube', "/home/vagrant/fusetube", "z:\\fusetube"
+  config.vm.share_folder 'fusetube', "/home/vagrant/fusetube", "../fusetube"
 
-  config.vm.customize ["modifyvm", :id, "--memory", 2900, "--cpus", 3]
+  config.vm.customize ["modifyvm", :id, "--memory", 4000, "--cpus", 4]
+  # config.vm.customize ["modifyvm", :id, "--memory", 4500, "--cpus", 6]
 
   # config.vm.provision :chef_solo do |chef|
   #   chef.cookbooks_path = ["cookbooks", "my-cookbooks"]
@@ -112,7 +114,5 @@ Vagrant::Config.run do |config|
   #   chef.add_recipe('bash-completion')
   #   chef.add_recipe('imagemagick')
   #   # chef.add_recipe('phantomjs')
-
-
   # end
 end
